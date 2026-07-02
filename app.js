@@ -1,4 +1,4 @@
-const VERSION='1.4.1';
+const VERSION='1.4.2';
 const seed={schemaVersion:2,settings:{shopName:'ร้านของฉัน',taxId:'',taxRate:7,serviceRate:10,taxOn:false,serviceOn:false,receiptNote:'ขอบคุณที่อุดหนุน'},products:[{id:1,name:'ปูจ๋า',cat:'อาหาร',price:20,cost:0,stock:50,min:10,unit:'กระดอง',icon:'🦀',image:''},{id:2,name:'ปูจ๋า แพ็ก 7 กระดอง',cat:'อาหาร',price:120,cost:0,stock:10,min:3,unit:'แพ็ก',icon:'🦀',image:''},{id:3,name:'ปลาแห้ง แพ็ก 5 ขีด',cat:'อาหาร',price:200,cost:0,stock:10,min:3,unit:'แพ็ก',icon:'🐟',image:''}],orders:[],held:[],logs:[]};
 let db=JSON.parse(localStorage.getItem('jos-pos')||'null')||structuredClone(seed),cart=[],type='ทานที่ร้าน',payType='cash',pendingImage='';if(!db.schemaVersion){db.products=structuredClone(seed.products);db.schemaVersion=2;localStorage.setItem('jos-pos',JSON.stringify(db))}
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],money=n=>'฿'+Number(n||0).toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});
