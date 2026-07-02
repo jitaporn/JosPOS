@@ -1,1 +1,1 @@
-{"name":"JOS POS","short_name":"JOS POS","start_url":"./","display":"standalone","background_color":"#f6f3ed","theme_color":"#173f35","lang":"th","icons":[]}
+{"name":"JOS POS","short_name":"JOS POS","id":"./","start_url":"./","scope":"./","display":"standalone","background_color":"#f6f3ed","theme_color":"#173f35","lang":"th","description":"ระบบขายหน้าร้านและจัดการสต๊อก","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
